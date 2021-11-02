@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Projeto-X _ Site de Rolagem Parallax | Vanilla Javascript </title>
+    <title>Parallax | Vanilla Javascript </title>
 </head>
 <body>
 
@@ -61,11 +61,11 @@
         window.addEventListener('scroll', function() {
             let value = window.scrollY;
 
-            //Texto.style.top = 50 + value * -0.5 + '%';
+            texto.style.top = 50 + value * -0.5 + '%';
             bird1.style.top = value * -1.5 + 'px';
             bird1.style.left = value * 2 + 'px';
             bird2.style.top = value * -1.5 + 'px';
-            bird2.style.left = value * 2 + 'px';
+            bird2.style.right = value * 2 + 'px';
             btn.style.marginTop = value * 1.5 + 'px';
             rochas.style.top = value * -0.12 + 'px';
             floresta.style.top = value * 0.25 + 'px';
